@@ -1,5 +1,5 @@
 #include <stdio.h>
-// capacity is taken as m
+
 
 int max(int a, int b)
 {
