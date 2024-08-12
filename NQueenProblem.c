@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int x[20];
-// k->row i->column
+
 int place(int k, int i)
 {
     int j;
@@ -22,12 +22,12 @@ void printQueen(int n)
     for (i = 1; i <= n; ++i)
     {
         printf("\n\n%d", i);
-        for (j = 1; j <= n; ++j) // for nxn board
+        for (j = 1; j <= n; ++j)
         {
             if (x[i] == j)
-                printf("\tQ"); // queen at i,j position
+                printf("\tQ"); 
             else
-                printf("\t-"); // empty slot
+                printf("\t-"); 
         }
     }
 }
