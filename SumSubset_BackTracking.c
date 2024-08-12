@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-int w[10]; // denotes set s
-int x[10]; // boolean array which tells if ele is part of subset or not
-int d;     // max value recieves when ele is added in the subset
+int w[10]; 
+int x[10]; 
+int d;     
 void sumSubset(int s, int k, int r)
 {
     int i;
-    static int b = 1; // number of subsets
+    static int b = 1; 
     x[k] = 1;
     if (w[k] + s == d)
     {
@@ -43,6 +43,6 @@ int main()
         exit(0);
     }
     sumSubset(0, 1, sum);
-    // 0-s 1-k sum-r
+    
     return (0);
 }
